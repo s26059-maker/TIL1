@@ -88,3 +88,19 @@ body:{
 **400 Bad Request -** 입력값 형식 오류 (이메일 형식 틀림 등)
 
 **409 Conflict -** 이미 존재하는 아이디
+
+## Header
+
+API 호출할 때 본문(body) 말고 부가적인 정보를 담아서 보내는 곳
+
+### 주로 담는 것
+- 인증 토큰
+- 컨텐츠 타입
+- 언어
+
+### 자주 보이는 것
+<pre>header: {
+  "Authorization": "Bearer {accessToken}"
+}</pre>
+
+로그인한 사람만 쓸 수 있으니까 토큰 넣어서 보내주 라는 뜻
